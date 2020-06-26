@@ -10,6 +10,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'morhetz/gruvbox'
+Plugin 'scrooloose/nerdtree'
 
 
 " All of your Plugins must be added before the following line
@@ -36,3 +37,10 @@ set backspace=indent,eol,start
 
 " Autoindent
 set autoindent
+
+" Asginacion de teclas
+" Cambiar tecla ESC por Ctrl+c
+inoremap <c-c> <Esc>
+
+" Abrir el nerd tree Ctrl+o
+map <C-o> :NERDTreeToggle<CR>
